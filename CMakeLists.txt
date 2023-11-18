@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(qtimageviewer VERSION 0.1.0 LANGUAGES C CXX)
 
-set(QT_VERSION_BASE "Qt5")
+# set(QT_VERSION_BASE "Qt5")
+set(QT_VERSION_BASE "Qt6")
 
 # Find the QtWidgets library
 find_package(${QT_VERSION_BASE} COMPONENTS Widgets Concurrent REQUIRED)
