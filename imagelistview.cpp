@@ -400,7 +400,7 @@ void ImageListView::paintEvent(QPaintEvent* event)
                 auto delta = (drawRect.height() - drawRect.height() * imageRect.height() / imageRect.width()) / 2.0;
                 drawRect.adjust(0, delta, 0, -delta);
             }
-            painter.drawImage(drawRect, *image, imageRect, nullptr);
+            painter.drawImage(drawRect, *image, imageRect);
         } else {
             painter.setPen(QPen(QColor("gray"), 1));
             painter.drawText(rect, Qt::AlignCenter, "Loading...");
